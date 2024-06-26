@@ -3,6 +3,7 @@ import ListadoTareas from "./ListadoTareas"
 import Header from "./Header"
 import React, { useEffect, useState } from 'react'
 import { useFetchTask } from "./hooks/useFetchTask";
+import './assets/css/app.css';
 
 
 
