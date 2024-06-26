@@ -23,13 +23,13 @@ const Tarea = ({tarea, setTareasObjeto, setEliminarID, setDatosEliminar}) => {
         <p className="font-bold mb-3 text-gray-700  flex">Estado: {''}
 
          {tarea.state ? (
-          <img className='px-5 w-20' src={correct} alt="correcto"></img>
+          <img className='px-5 w-20'  src={correct} alt="correcto"></img>
          ):(
           <img src={incorrect} className='px-5 w-20' alt="incorrecto"></img>
          )} 
         </p>
         <div className='flex justify-between'>
-        <input type="button" onClick={handleEditar} className="bg-yellow-600 w-20 p-3  text-white uppercase font-bold hover:bg-yellow-700 cursor-pointer transition-all" value="Editar" />
+        <input type="button" onClick={handleEditar} className="bg-yellow-600 w-30 p-3  text-white uppercase font-bold hover:bg-yellow-700 cursor-pointer transition-all" value="Editar" />
         <input type="button" onClick={()=>handleEliminar(tarea.id)} className="bg-red-600 w-30 p-3 text-white uppercase font-bold hover:bg-red-700 cursor-pointer transition-all" value="Eliminar" />
         </div>
        
