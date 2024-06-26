@@ -1,5 +1,5 @@
 export const getTask = async () => {
-    const url = `http://tareaswebapi.somee.com/api/Tareas/Lista`;
+    const url = `https://webapitareas20240626165259.azurewebsites.net/api/Tareas/Lista`;
 
     try {
         const resp = await fetch(url);        
@@ -32,7 +32,7 @@ export const getTask = async () => {
 
 export const saveTaskHelper = async (objetoTareas) => {
   
-    const url = `http://tareaswebapi.somee.com/api/Tareas/Guardar`;
+    const url = `https://webapitareas20240626165259.azurewebsites.net/api/Tareas/Guardar`;
     const data = {
         "titulo": objetoTareas.title,
         "descripcion": objetoTareas.description,
@@ -70,7 +70,7 @@ export const saveTaskHelper = async (objetoTareas) => {
 
 export const updateTaskHelper = async (objetoTareas) => {
     
-     const url = `http://tareaswebapi.somee.com/api/Tareas/Editar`;
+     const url = `https://webapitareas20240626165259.azurewebsites.net/api/Tareas/Editar`;
      const data = {
         "id": objetoTareas.id,
         "titulo": objetoTareas.title,
@@ -109,7 +109,7 @@ export const updateTaskHelper = async (objetoTareas) => {
 
  export const deleteTaskHelper = async (id) => {
     
-    const url = `http://tareaswebapi.somee.com/api/Tareas/Eliminar/${id}?idTask=${id}`;
+    const url = `https://webapitareas20240626165259.azurewebsites.net/api/Tareas/Eliminar/${id}?idTask=${id}`;
 
     try {
         const resp = await fetch(url, {
